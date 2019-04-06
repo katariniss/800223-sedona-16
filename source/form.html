@@ -32,8 +32,113 @@
   <div class="welcome">
     <img class="welcome__image" src="http://placehold.it/150x100">
   </div>
-  <main class="page-main">
-
+  <main class="main">
+    <h1 class="main__title">Оставьте свой отзыв</h1>
+    <p>Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+    <form class="form" action="https://echo.htmlacademy.ru" method="POST">
+      <fieldset class="form__name name">
+        <h2 class="form__title">Представьтесь:</h2>
+        <ul class="name__list">
+          <li class="name__item">
+            <label for="first-name">
+              <span>Имя*</span>
+              <input class="name__input" type="text" name="first-name" id="first-name" placeholder="Петр">
+            </label>
+          </li>
+          <li class="name__item">
+            <label for="last-name">
+              <span>Фамилия*</span>
+              <input class="name__input" type="text" name="last-name" id="last-name" placeholder="Иванов">
+            </label>
+          </li>
+          <li class="name__item">
+            <label for="middle-name">
+              <span>Отчество</span>
+              <input class="name__input" type="text" name="middle-name" id="middle-name" placeholder="Александрович">
+            </label>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset class="form__contacts contacts">
+        <h2 class="form__title">Ваша контактная информация:</h2>
+        <ul class="contacts__list">
+          <li class="contacts__item">
+            <label for="tel">
+              <span>Контактный телефон</span>
+              <input class="contacts__input" type="tel" name="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" placeholder="Введите телефон">
+              <span class="contacts__icon contacts__icon--tel"></span>
+            </label>
+          </li>
+          <li class="contacts__item">
+            <label for="email">
+              <span>Электронная почта</span>
+              <input class="contacts__input" type="email" name="email" placeholder="Введите почту">
+              <span class="contacts__icon contacts__icon--email"></span>
+            </label>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset class="form__radio radio">
+        <h2 class="form__title">Ваше общее впечатление:</h2>
+        <ul class="radio__list">
+          <li class="radio__item">
+            <label for="positive">
+              <span class="radio__checkmark"></span>
+              <input class="radio__input" type="radio" name="impression" id="positive" value="positive">
+              <span>Скорее положительное</span>
+            </label>
+          </li>
+          <li class="radio__item">
+            <label for="negative">
+              <span class="radio__checkmark"></span>
+              <input class="radio__input" type="radio" name="impression" id="negative" value="negative">
+              <span>Скорее отрицательное</span>
+            </label>
+          </li>
+          <li class="radio__item">
+            <label for="neutral">
+              <span class="radio__checkmark"></span>
+              <input class="radio__input" type="radio" name="impression" id="neutral" value="neutral">
+              <span>Затрудняюсь ответить</span>
+            </label>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset class="form__checkbox checkbox">
+        <h2 class="form__title">Посещенные достопримечательности:</h2>
+        <ul class="checkbox__list">
+          <li class="checkbox__item">
+            <label for="bridge">
+              <span class="checkbox__checkmark"></span>
+              <input class="checkbox__input" type="checkbox" name="landmark" id="bridge" value="bridge" checked>Мост дьявола
+            </label>
+          </li>
+          <li class="checkbox__item">
+            <label for="bell">
+              <span class="checkbox__checkmark"></span>
+              <input class="checkbox__input" type="checkbox" name="landmark" id="bell" value="bell" checked>Гора колокол
+            </label>
+          </li>
+          <li class="checkbox__item">
+            <label for="park">
+              <span class="checkbox__checkmark"></span>
+              <input class="checkbox__input" type="checkbox" name="landmark" id="park" value="park" checked>Слайд-парк
+            </label>
+          </li>
+          <li class="checkbox__item">
+            <label for="cliffs">
+              <span class="checkbox__checkmark"></span>
+              <input class="checkbox__input" type="checkbox" name="landmark" id="cliffs" value="cliffs">Красные скалы
+            </label>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset class="form__textarea textarea">
+        <h2 class="form__title">Опишите сови эмоции:</h2>
+        <textarea class="textarea__text">Опишите подробно все свои восторги</textarea>
+      </fieldset>
+      <button class="form__submit" type="submit" value="Отправить отзыв">Отправить отзыв</button>
+    </form>
   </main>
   <footer class="footer">
     <a class="footer__hashtag" href="#">#VisitSedona</a>
