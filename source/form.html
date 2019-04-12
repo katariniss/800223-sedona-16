@@ -73,7 +73,7 @@
           <li class="contacts__item">
             <label for="email" class="contacts__label">
               <span>Электронная почта*:</span>
-              <input class="contacts__input" type="email" name="email" placeholder="Введите почту">
+              <input class="contacts__input" type="email" name="email" placeholder="Введите email">
               <span class="contacts__icon contacts__icon--email"></span>
             </label>
           </li>
@@ -83,21 +83,21 @@
         <h2 class="form__title">Ваше общее впечатление:</h2>
         <ul class="radio__list">
           <li class="radio__item">
-            <label for="positive">
+            <label for="positive" class="radio__label">
               <span class="radio__checkmark"></span>
               <input class="radio__input" type="radio" name="impression" id="positive" value="positive">
               <span>Скорее положительное</span>
             </label>
           </li>
           <li class="radio__item">
-            <label for="negative">
+            <label for="negative" class="radio__label">
               <span class="radio__checkmark"></span>
               <input class="radio__input" type="radio" name="impression" id="negative" value="negative">
               <span>Скорее отрицательное</span>
             </label>
           </li>
           <li class="radio__item">
-            <label for="neutral">
+            <label for="neutral" class="radio__label">
               <span class="radio__checkmark"></span>
               <input class="radio__input" type="radio" name="impression" id="neutral" value="neutral">
               <span>Затрудняюсь ответить</span>
@@ -109,25 +109,25 @@
         <h2 class="form__title">Посещенные достопримечательности:</h2>
         <ul class="checkbox__list">
           <li class="checkbox__item">
-            <label for="bridge">
+            <label for="bridge" class="checkbox__label">
               <span class="checkbox__checkmark"></span>
-              <input class="checkbox__input" type="checkbox" name="landmark" id="bridge" value="bridge" checked>Мост дьявола
+              <input class="checkbox__input" type="checkbox" name="landmark" id="bridge" value="bridge" checked>Мост Дьявола
             </label>
           </li>
           <li class="checkbox__item">
-            <label for="bell">
+            <label for="bell" class="checkbox__label">
               <span class="checkbox__checkmark"></span>
-              <input class="checkbox__input" type="checkbox" name="landmark" id="bell" value="bell" checked>Гора колокол
+              <input class="checkbox__input" type="checkbox" name="landmark" id="bell" value="bell" checked>Гора-Колокол
             </label>
           </li>
           <li class="checkbox__item">
-            <label for="park">
+            <label for="park" class="checkbox__label">
               <span class="checkbox__checkmark"></span>
               <input class="checkbox__input" type="checkbox" name="landmark" id="park" value="park" checked>Слайд-парк
             </label>
           </li>
           <li class="checkbox__item">
-            <label for="cliffs">
+            <label for="cliffs" class="checkbox__label">
               <span class="checkbox__checkmark"></span>
               <input class="checkbox__input" type="checkbox" name="landmark" id="cliffs" value="cliffs">Красные скалы
             </label>
@@ -135,7 +135,7 @@
         </ul>
       </fieldset>
       <fieldset class="form__textarea textarea">
-        <h2 class="form__title">Опишите сови эмоции:</h2>
+        <h2 class="form__title">Опишите свои эмоции:</h2>
         <textarea class="textarea__text">Опишите подробно все свои восторги</textarea>
       </fieldset>
       <button class="form__submit" type="submit" value="Отправить отзыв">Отправить отзыв</button>
