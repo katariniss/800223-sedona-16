@@ -1,21 +1,23 @@
-.form__name {
-  padding: 0;
-}
+.form {
+  &__name {
+    padding: 0;
+  }
 
-.form__title {
-  font-size: 18px;
-  margin-top: 24px;
-}
+  &__title {
+    font-size: @font-size;
+    margin-top: 24px;
+  }
 
-.form__submit {
-  width: 280px;
-  min-height: 59px;
-  font-family: "PT Sans", "Arial", sans-serif;
-  font-size: 21px;
-  text-transform: uppercase;
-  color: white;
-  background-color: @blue;
-  border: 0;
-  margin-top: 50px;
-  margin-bottom: 47px;
+  &__submit {
+    width: 280px;
+    min-height: 59px;
+    font-family: @font-family;
+    font-size: 21px;
+    text-transform: uppercase;
+    color: white;
+    background-color: @blue;
+    border: 0;
+    margin-top: 50px;
+    margin-bottom: 47px;
+  }
 }

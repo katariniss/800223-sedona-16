@@ -16,16 +16,18 @@
   align-items: center;
 }
 
-.name__input {
-  flex-grow: 1;
-  outline: none;
-  padding: 20px;
-  margin-left: 14px;
-  background-color: @grey;
-  font-weight: bold;
-  border: none;
-}
+.name {
+  &__input {
+    flex-grow: 1;
+    outline: none;
+    padding: 20px;
+    margin-left: 14px;
+    background-color: @grey;
+    font-weight: bold;
+    border: none;
+  }
 
-.name__input::placeholder {
-  .placeholder(black, 18px);
+  &__input::placeholder {
+    .placeholder(black, @font-size);
+  }
 }

@@ -1,24 +1,26 @@
-.features--blue {
-  color: white;
-  background-color: @blue;
-}
+.features {
+  &--blue {
+    color: white;
+    background-color: @blue;
+  }
 
-.features--grey {
-  color: black;
-  background-color: @grey;
-}
+  &--grey {
+    color: black;
+    background-color: @grey;
+  }
 
-.features__text {
-  padding-bottom: 30px;
-  padding-top: 30px;
-  padding-left: 27px;
-  padding-right: 28px;
-}
+  &__text {
+    padding-bottom: 30px;
+    padding-top: 30px;
+    padding-left: 27px;
+    padding-right: 28px;
+  }
 
-.features__title {
-  font-size: 18px;
-}
+  &__title {
+    font-size: @font-size;
+  }
 
-.features__photo {
-  width: 100%;
+  &__photo {
+    width: 100%;
+  }
 }
