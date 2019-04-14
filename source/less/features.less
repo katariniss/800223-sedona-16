@@ -24,3 +24,18 @@
     width: 100%;
   }
 }
+
+@media (min-width: @tablet-width) {
+  .features--blue {
+    display: flex;
+  }
+
+  .features--reverse .features__text {
+    order: 2;
+  }
+
+  .features__wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+}

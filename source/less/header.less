@@ -9,4 +9,50 @@
     background-repeat: no-repeat;
     width: 102px;
   }
+
+  &__list {
+    display: none;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .header {
+    &__list {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+
+      list-style: none;
+      margin: 0;
+      margin-left: 49px;
+      margin-right: 26px;
+      padding: 0;
+      min-width: 768px;
+      height: 56px;
+    }
+
+    &__toggle {
+      display: none;
+    }
+
+    &__logo {
+      position: absolute;
+      left: 50%;
+    }
+
+    &__item {
+      min-width: 153px;
+      font-size: 14px;
+      font-weight: bold;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .header {
+    &__list {
+      width: 1200px;
+    }
+  }
 }
