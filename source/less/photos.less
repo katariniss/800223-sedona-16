@@ -1,4 +1,6 @@
 .photos {
+  margin-top: 33px;
+
   &__list {
     padding: 0;
   }
@@ -30,6 +32,8 @@
 
 @media (min-width: @tablet-width) {
   .photos {
+    margin-top: 75px;
+
     &__list {
       display: flex;
       flex-wrap: wrap;
@@ -59,11 +63,45 @@
       height: 80px;
       background-color: @grey;
       margin-top: -18px;
+      padding-right: 20px;
     }
 
     &__info {
       display: flex;
       justify-content: space-between;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .photos {
+    margin-top: 77px;
+    &__list {
+      margin-left: 0;
+      margin-right: 0;
+    }
+    &__item {
+      width: 400px;
+      height: 267px;
+    }
+    &__item--first {
+      min-width: 1200px;
+      min-height: 400px;
+      margin: 0 auto;
+      flex-grow: 1;
+    }
+    &__image {
+      width: 400px;
+      height: 267px;
+    }
+    &__image--first {
+      min-width: 1200px;
+      height: 400px;
+    }
+    &__text {
+      margin-top: -100px;
+      color: @white;
+      background: rgba(0, 0, 0, 0.3);
     }
   }
 }
