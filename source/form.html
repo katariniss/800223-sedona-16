@@ -26,6 +26,20 @@
     </ul>
   </nav>
   <header class="header">
+    <ul class="header__list">
+      <li class="header__item">
+        <a class="header__link" href="index.html">Главная</a>
+      </li>
+      <li class="header__item">
+        <a class="header__link" href="form.html">Фото и видео</a>
+      </li>
+      <li class="header__item header__item--active">
+        Форма отзыва
+      </li>
+      <li class="header__item">
+        <a class="header__link" href="https://up.htmlacademy.ru/adaptive/16">HTML Academy</a>
+      </li>
+    </ul>
     <a class="header__logo"></a>
     <button class="header__toggle" type="button">
       Открыть меню
@@ -138,7 +152,10 @@
         <h2 class="form__title">Опишите свои эмоции:</h2>
         <textarea class="textarea__text">Опишите подробно все свои восторги</textarea>
       </fieldset>
-      <button class="form__submit" type="submit" value="Отправить отзыв">Отправить отзыв</button>
+      <div class="form__wrapper">
+        <button class="form__submit" type="submit" value="Отправить отзыв">Отправить отзыв</button>
+        <span class="form__required">* - Обязательные поля</span>
+      </div>
     </form>
   </main>
   <footer class="footer">
