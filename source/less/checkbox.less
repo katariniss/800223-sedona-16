@@ -27,13 +27,23 @@
 
 @media (min-width: @tablet-width) {
   .checkbox {
-    width: 465px;
     margin: 0 auto;
 
     &__list {
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
+    }
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .checkbox {
+    width: 960px;
+    margin: 0 auto;
+
+    &__list {
+      justify-content: space-between;
     }
   }
 }
