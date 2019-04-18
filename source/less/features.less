@@ -4,7 +4,7 @@
     background-color: @blue;
   }
 
-  &--grey {
+  &__wrapper {
     color: black;
     background-color: @grey;
   }
@@ -30,8 +30,8 @@
     display: flex;
   }
 
-  .features--reverse .features__text {
-    order: 2;
+  .features--reverse {
+    flex-direction: row-reverse;
   }
 
   .features__wrapper {
