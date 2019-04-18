@@ -4,7 +4,7 @@
     background-color: @blue;
   }
 
-  &--grey {
+  &__wrapper {
     color: black;
     background-color: @grey;
   }
@@ -22,5 +22,20 @@
 
   &__photo {
     width: 100%;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .features--blue {
+    display: flex;
+  }
+
+  .features--reverse {
+    flex-direction: row-reverse;
+  }
+
+  .features__wrapper {
+    display: flex;
+    flex-direction: row;
   }
 }

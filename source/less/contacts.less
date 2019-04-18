@@ -28,3 +28,36 @@
     .placeholder(black, @font-size);
   }
 }
+
+@media (min-width: @tablet-width) {
+  .contacts {
+    &__label {
+      text-align: left;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contacts {
+    &__list {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__input {
+      min-width: 274px;
+      margin-left: 16px;
+      margin-right: 0;
+    }
+
+    &__label {
+      display: flex;
+      flex-direction: row;
+      align-items: baseline;
+    }
+
+    &__hide {
+      display: none;
+    }
+  }
+}
