@@ -1,1 +1,31 @@
-// ToDo
+.copyright {
+  display: flex;
+  align-items: center;
+  width: 130px;
+  margin: 0 auto;
+
+  &__link {
+    height: 40px;
+  }
+
+  &__link svg {
+    margin-left: 8px;
+    height: 40px;
+  }
+
+  &__link svg:hover path,
+  &__link svg:focus path {
+    fill: #81b3d2;
+  }
+
+  &__link svg:active path {
+    fill: #bdbbbc;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .copyright {
+    margin-left: 30px;
+    margin-right: 0;
+  }
+}
