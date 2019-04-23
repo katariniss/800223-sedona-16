@@ -9,7 +9,10 @@
 </head>
 
 <body>
-  <nav class="main-nav">
+  <nav class="main-nav main-nav--opened">
+    <button class="main-nav__toggle" type="button">
+      <span class="visually-hidden">Закрыть меню</span>
+    </button>
     <ul class="main-nav__list">
       <li class="main-nav__item main-nav__item">
         <a class="main-nav__link" href="index.html">Главная</a>
@@ -33,6 +36,8 @@
       <li class="header__item header__item--active">
         Фото и видео
       </li>
+    </ul>
+    <ul class="header__list">
       <li class="header__item">
         <a class="header__link" href="form.html">Форма отзыва</a>
       </li>
@@ -40,9 +45,11 @@
         <a class="header__link" href="https://up.htmlacademy.ru/adaptive/16">HTML Academy</a>
       </li>
     </ul>
-    <a class="header__logo"></a>
+    <a class="header__logo" href="index.html">
+      <span class="visually-hidden">Логотип Седоны</span>
+    </a>
     <button class="header__toggle" type="button">
-      Открыть меню
+      <span class="visually-hidden">Открыть меню</span>
     </button>
   </header>
   <div class="welcome">
