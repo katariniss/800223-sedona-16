@@ -6,42 +6,82 @@
 
   &__item {
     padding-right: 40px;
+    position: relative;
   }
 
   &__title {
     font-size: @font-size;
     margin-top: 34px;
     margin-bottom: 18px;
-    position: relative;
   }
 
-  &__title::before {
-    position: absolute;
-    margin-left: -37px;
-    left: 0;
-    content: " ";
-  }
-
-  &__title--house::before {
-    background-image: url("/img/icon-house.svg");
-    background-repeat: no-repeat;
+  &__image--house {
     height: 37px;
     width: 36px;
+    position: absolute;
+    top: -10px;
+    left: -47px;
   }
 
-  &__title--food::before {
-    background-image: url("/img/icon-burger.svg");
-    background-repeat: no-repeat;
-    height: 35px;
-    width: 40px;
+  &__image--house path,
+  &__image--house rect {
+    fill: @blue;
   }
 
-  &__title--souvenirs::before {
-    background-image: url("/img/icon-gift.svg");
-    background-repeat: no-repeat;
+  &__image--souvenirs {
     height: 38px;
     width: 32px;
+    position: absolute;
+    top: -10px;
+    left: -47px;
   }
+
+  &__image--souvenirs path {
+    fill: @blue;
+  }
+
+  &__image--food {
+    height: 35px;
+    width: 40px;
+    position: absolute;
+    top: -5px;
+    left: -53px;
+  }
+
+  &__image--food path,
+  &__image--food circle,
+  &__image--food polygon {
+    fill: @blue;
+  }
+
+  // &__item::before {
+  //   position: absolute;
+  //   margin-left: 17px;
+  //   left: 0;
+  //   // top: 10px;
+  //   content: " ";
+  // }
+
+  // &__item--house::before {
+  //   background-image: url("/img/icon-house.svg");
+  //   background-repeat: no-repeat;
+  //   height: 37px;
+  //   width: 36px;
+  // }
+
+  // &__item--food::before {
+  //   background-image: url("/img/icon-burger.svg");
+  //   background-repeat: no-repeat;
+  //   height: 35px;
+  //   width: 40px;
+  // }
+
+  // &__item--souvenirs::before {
+  //   background-image: url("/img/icon-gift.svg");
+  //   background-repeat: no-repeat;
+  //   height: 38px;
+  //   width: 32px;
+  // }
 }
 
 @media (min-width: @tablet-width) {
@@ -64,40 +104,26 @@
     &__item--souvenirs {
       order: 3;
     }
-  }
 
-  &__title {
-    position: relative;
-  }
+    &__image--house {
+      left: 72px;
+      top: -66px;
+      width: 75px;
+      height: 72px;
+    }
 
-  &__title::before {
-    position: absolute;
-    margin-left: -37px;
-    left: 50%;
-    content: " ";
-  }
+    &__image--food {
+      top: -64px;
+      left: 69px;
+      height: 68px;
+      width: 77px;
+    }
 
-  &__title--house::before {
-    background-image: url("/img/icon-house.svg");
-    background-repeat: no-repeat;
-    height: 72px;
-    width: 75px;
-    top: -100px;
-  }
-
-  &__title--food::before {
-    background-image: url("/img/icon-burger.svg");
-    background-repeat: no-repeat;
-    height: 70px;
-    width: 75px;
-    top: -98px;
-  }
-
-  &__title--souvenirs::before {
-    background-image: url("/img/icon-gift.svg");
-    background-repeat: no-repeat;
-    height: 75px;
-    width: 75px;
-    top: -98px;
+    &__image--souvenirs {
+      top: -70px;
+      left: 68px;
+      height: 75px;
+      width: 64px;
+    }
   }
 }
