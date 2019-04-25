@@ -1,6 +1,9 @@
 .features {
   &--blue {
     color: white;
+  }
+
+  &--blue .features__text {
     background-color: @blue;
   }
 
@@ -11,9 +14,27 @@
 
   &__text {
     padding-bottom: 30px;
-    padding-top: 30px;
+    padding-top: 50px;
     padding-left: 27px;
     padding-right: 28px;
+  }
+
+  &--reverse .features__text {
+    padding-top: 27px;
+  }
+
+  &--grey .features__text {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  &--grey .features__title {
+    margin-top: 0;
+  }
+
+  &--grey {
+    padding-top: 25px;
+    padding-bottom: 24px;
   }
 
   &__title {
@@ -28,6 +49,12 @@
 @media (min-width: @tablet-width) {
   .features--blue {
     display: flex;
+    margin-top: 50px;
+  }
+
+  .features--grey {
+    width: 256px;
+    height: 256px;
   }
 
   .features--reverse {
@@ -37,5 +64,14 @@
   .features__wrapper {
     display: flex;
     flex-direction: row;
+  }
+
+  .features__text {
+    width: 300px;
+    padding-top: 27px;
+  }
+
+  .features__title {
+    font-size: 21px;
   }
 }
