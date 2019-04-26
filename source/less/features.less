@@ -5,6 +5,7 @@
 
   &--blue .features__text {
     background-color: @blue;
+    margin-top: -19px;
   }
 
   &__wrapper {
@@ -21,6 +22,7 @@
 
   &--reverse .features__text {
     padding-top: 27px;
+    margin-top: 0;
   }
 
   &--grey .features__text {
@@ -53,8 +55,10 @@
   }
 
   .features--grey {
-    width: 256px;
-    height: 256px;
+    width: 30%;
+    flex-grow: 1;
+    height: 188px;
+    padding-top: 39px;
   }
 
   .features--reverse {
@@ -69,9 +73,65 @@
   .features__text {
     width: 300px;
     padding-top: 27px;
+    padding-left: 49px;
+  }
+
+  .features--grey .features__text {
+    width: 155px;
   }
 
   .features__title {
     font-size: 21px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .features {
+    &--blue {
+      margin-top: 54px;
+    }
+
+    &__text {
+      width: 400px;
+      padding-left: 65px;
+      padding-right: 67px;
+    }
+
+    &__text p {
+      line-height: 21px;
+    }
+
+    &__title {
+      margin-top: 25px;
+      margin-left: 34px;
+      margin-bottom: 0;
+      width: 200px;
+    }
+
+    &--reverse {
+      margin-top: 63px;
+    }
+
+    &--grey {
+      width: 400px;
+      padding-top: 47px;
+      padding-bottom: 19px;
+    }
+
+    &--grey p {
+      margin-bottom: 21px;
+    }
+
+    &--grey .features__text {
+      width: 287px;
+      padding-left: 68px;
+      padding-right: 68px;
+      line-height: 21px;
+    }
+
+    &--grey .features__title {
+      width: 160px;
+      margin-left: 50px;
+    }
   }
 }

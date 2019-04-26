@@ -26,3 +26,41 @@
     font-size: 21px;
   }
 }
+
+@media (min-width: @tablet-width) {
+  .booking {
+    padding-top: 55px;
+    padding-bottom: 57px;
+
+    &__title {
+      font-size: 30px;
+      margin-bottom: 33px;
+    }
+
+    &__text {
+      padding-left: 150px;
+      padding-right: 150px;
+    }
+
+    &__button {
+      margin-top: 28px;
+      width: 460px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .booking {
+    padding-bottom: 66px;
+
+    &__text {
+      width: 434px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+
+    &__button {
+      margin-top: 32px;
+    }
+  }
+}

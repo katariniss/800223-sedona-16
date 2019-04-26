@@ -90,7 +90,7 @@
     text-align: center;
     margin-top: 0;
     padding-top: 125px;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
     padding-left: 10px;
 
     &__item--house {
@@ -106,24 +106,47 @@
     }
 
     &__image--house {
-      left: 72px;
+      left: 31%;
       top: -66px;
       width: 75px;
       height: 72px;
     }
 
     &__image--food {
-      top: -64px;
-      left: 69px;
+      top: -63px;
+      left: 29%;
       height: 68px;
       width: 77px;
     }
 
     &__image--souvenirs {
-      top: -70px;
-      left: 68px;
+      top: -69px;
+      left: 32%;
       height: 75px;
       width: 64px;
+    }
+
+    &__title {
+      margin-bottom: 25px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .recommendations {
+    &__image--house {
+      left: 150px;
+      top: -69px;
+    }
+
+    &__image--souvenirs {
+      top: -72px;
+      left: 134px;
+    }
+
+    &__image--food {
+      top: -66px;
+      left: 144px;
     }
   }
 }
