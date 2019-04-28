@@ -5,7 +5,7 @@
 
   &--blue .features__text {
     background-color: @blue;
-    margin-top: -19px;
+    margin-top: -28px;
   }
 
   &__wrapper {
@@ -14,10 +14,14 @@
   }
 
   &__text {
-    padding-bottom: 30px;
+    padding-bottom: 22px;
     padding-top: 50px;
     padding-left: 27px;
     padding-right: 28px;
+  }
+
+  &__text p {
+    margin-top: -4px;
   }
 
   &--reverse .features__text {
@@ -35,8 +39,8 @@
   }
 
   &--grey {
-    padding-top: 25px;
-    padding-bottom: 24px;
+    padding-top: 22px;
+    padding-bottom: 14px;
   }
 
   &__title {
@@ -51,18 +55,22 @@
 @media (min-width: @tablet-width) {
   .features--blue {
     display: flex;
-    margin-top: 50px;
+    margin-top: 73px;
+    height: 228px;
   }
 
   .features--grey {
     width: 30%;
     flex-grow: 1;
     height: 188px;
-    padding-top: 39px;
+    padding-top: 43px;
+    padding-bottom: 25px;
   }
 
   .features--reverse {
     flex-direction: row-reverse;
+    margin-top: 37px;
+    height: 256px;
   }
 
   .features__wrapper {
@@ -71,7 +79,7 @@
   }
 
   .features__text {
-    width: 300px;
+    width: 270px;
     padding-top: 27px;
     padding-left: 49px;
   }
@@ -88,7 +96,7 @@
 @media (min-width: @desktop-width) {
   .features {
     &--blue {
-      margin-top: 54px;
+      margin-top: 76px;
     }
 
     &__text {
@@ -104,12 +112,12 @@
     &__title {
       margin-top: 25px;
       margin-left: 34px;
-      margin-bottom: 0;
+      margin-bottom: 13px;
       width: 200px;
     }
 
     &--reverse {
-      margin-top: 63px;
+      margin-top: 61px;
     }
 
     &--grey {
@@ -132,6 +140,8 @@
     &--grey .features__title {
       width: 160px;
       margin-left: 50px;
+      margin-bottom: 16px;
+      margin-top: 3px;
     }
   }
 }
