@@ -3,25 +3,79 @@
 
   &__list {
     padding: 0;
-    margin-top: 26px;
+    margin-top: 32px;
   }
 
   &__label {
-    display: flex;
+    // display: flex;
     flex-direction: row;
     align-items: center;
+    text-align: left;
     text-transform: initial;
     font-weight: bold;
     font-size: @font-size;
     margin-bottom: 30px;
+    display: block;
+    position: relative;
+    cursor: pointer;
   }
 
   &__item {
     padding-left: 20px;
+    padding-bottom: 27px;
+  }
+
+  &__value {
+    margin-left: 78px;
   }
 
   &__input {
     margin-right: 27px;
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+
+  &__checkmark {
+    position: absolute;
+    top: -14px;
+    left: -2px;
+    width: 50px;
+    height: 51px;
+    background-color: #f2f2f2;
+  }
+
+  &__checkmark::after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+
+  &__label:hover input ~ .checkbox__checkmark {
+    background-color: #e5e5e5;
+  }
+
+  &__label:active input ~ .checkbox__checkmark {
+    background-color: #d5d5d5;
+  }
+
+  &__label input:checked ~ .checkbox__checkmark::after {
+    content: "";
+    display: block;
+  }
+
+  &__label .checkbox__checkmark::after,
+  &__label:active input ~ .checkbox__checkmark::after {
+    content: "";
+    left: 19px;
+    top: 11px;
+    width: 11px;
+    height: 18px;
+    border: solid 2px black;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
   }
 }
 

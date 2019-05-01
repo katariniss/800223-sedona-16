@@ -75,7 +75,7 @@
       <div class="welcome__mask"></div>
     </div>
     <main class="main">
-      <h1 class="main__title">Оставьте свой отзыв</h1>
+      <h1 class="main__title main__title--form">Оставьте свой отзыв</h1>
       <p>Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
       <form class="form" action="https://echo.htmlacademy.ru" method="POST">
         <fieldset class="form__name name">
@@ -126,23 +126,23 @@
           <ul class="radio__list">
             <li class="radio__item">
               <label for="positive" class="radio__label">
+                <input class="radio__input" type="radio" name="impression" id="positive" value="positive" checked>
+                <span class="radio__opinion">Скорее положительное</span>
                 <span class="radio__checkmark"></span>
-                <input class="radio__input" type="radio" name="impression" id="positive" value="positive">
-                <span>Скорее положительное</span>
               </label>
             </li>
             <li class="radio__item">
               <label for="negative" class="radio__label">
-                <span class="radio__checkmark"></span>
                 <input class="radio__input" type="radio" name="impression" id="negative" value="negative">
-                <span>Скорее отрицательное</span>
+                <span class="radio__opinion">Скорее отрицательное</span>
+                <span class="radio__checkmark"></span>
               </label>
             </li>
             <li class="radio__item">
               <label for="neutral" class="radio__label">
-                <span class="radio__checkmark"></span>
                 <input class="radio__input" type="radio" name="impression" id="neutral" value="neutral">
-                <span>Затрудняюсь ответить</span>
+                <span class="radio__opinion">Затрудняюсь ответить</span>
+                <span class="radio__checkmark"></span>
               </label>
             </li>
           </ul>
@@ -152,26 +152,30 @@
           <ul class="checkbox__list">
             <li class="checkbox__item">
               <label for="bridge" class="checkbox__label">
+                <input class="checkbox__input" type="checkbox" name="landmark" id="bridge" value="bridge" checked>
+                <span class="checkbox__value">Мост Дьявола</span>
                 <span class="checkbox__checkmark"></span>
-                <input class="checkbox__input" type="checkbox" name="landmark" id="bridge" value="bridge" checked>Мост Дьявола
               </label>
             </li>
             <li class="checkbox__item">
               <label for="bell" class="checkbox__label">
+                <input class="checkbox__input" type="checkbox" name="landmark" id="bell" value="bell" checked>
+                <span class="checkbox__value">Гора-Колокол</span>
                 <span class="checkbox__checkmark"></span>
-                <input class="checkbox__input" type="checkbox" name="landmark" id="bell" value="bell" checked>Гора-Колокол
               </label>
             </li>
             <li class="checkbox__item">
               <label for="park" class="checkbox__label">
+                <input class="checkbox__input" type="checkbox" name="landmark" id="park" value="park" checked>
+                <span class="checkbox__value">Слайд-парк</span>
                 <span class="checkbox__checkmark"></span>
-                <input class="checkbox__input" type="checkbox" name="landmark" id="park" value="park" checked>Слайд-парк
               </label>
             </li>
             <li class="checkbox__item">
               <label for="cliffs" class="checkbox__label">
+                <input class="checkbox__input" type="checkbox" name="landmark" id="cliffs" value="cliffs">
+                <span class="checkbox__value">Красные скалы</span>
                 <span class="checkbox__checkmark"></span>
-                <input class="checkbox__input" type="checkbox" name="landmark" id="cliffs" value="cliffs">Красные скалы
               </label>
             </li>
           </ul>
