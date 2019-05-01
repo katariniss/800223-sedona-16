@@ -74,6 +74,12 @@
 
 @media (min-width: @desktop-width) {
   .welcome {
+    height: 300px;
+
+    &__text {
+      margin-top: 100px;
+    }
+
     &__text--index {
       width: 460px;
       height: 350px;
@@ -83,6 +89,7 @@
     &__mask {
       background-image: url("/img/bg-intro-triangle-desktop.svg");
       min-width: @desktop-width;
+      margin-top: 60px;
     }
   }
 }
