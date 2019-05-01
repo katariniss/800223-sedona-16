@@ -1,5 +1,5 @@
 .video {
-  padding-top: 22px;
+  padding-top: 30px;
 
   &__title {
     padding-bottom: 13px;
@@ -14,8 +14,23 @@
 }
 
 @media (min-width: @tablet-width) {
-  .video__clip {
-    width: 648px;
+  .video {
+    padding-top: 45px;
+
+    &__title {
+      font-size: 30px;
+    }
+
+    &__clip {
+      width: 648px;
+      padding-top: 57px;
+      padding-bottom: 128px;
+    }
+  }
+
+  .video p {
+    margin-right: 170px;
+    margin-left: 170px;
   }
 }
 

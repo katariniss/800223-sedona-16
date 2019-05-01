@@ -1,13 +1,14 @@
 .photos {
-  margin-top: 27px;
+  margin-top: 0;
 
   &__list {
     padding: 0;
+    margin-top: 0;
   }
 
   &__item {
-    padding-top: 23px;
-    padding-bottom: 15px;
+    padding-top: 36px;
+    padding-bottom: 3px;
   }
 
   &__text {
@@ -36,7 +37,7 @@
 @media (min-width: @tablet-width) {
   .photos {
 
-    margin-top: 75px;
+    margin-top: 67px;
 
     &__list {
       display: flex;
@@ -55,8 +56,13 @@
       flex-grow: 1;
     }
 
+    &__item--first .photos__image {
+      height: 400px;
+    }
+
     &__image {
       width: 324px;
+      height: 267px;
     }
 
     &__image--first {
@@ -73,6 +79,14 @@
     &__info {
       display: flex;
       justify-content: space-between;
+    }
+
+    &__title {
+      padding-top: 17px;
+    }
+
+    &__likes-number {
+      margin-top: -10px;
     }
   }
 }
