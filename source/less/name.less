@@ -31,3 +31,28 @@
     .placeholder(black, @font-size);
   }
 }
+
+@media (min-width: @tablet-width) {
+  .name {
+    &__list {
+      margin-top: 59px;
+      margin-bottom: 0;
+    }
+
+    &__item {
+      padding-right: 0;
+      padding-left: 85px;
+      margin-bottom: 23px;
+    }
+
+    &__item:last-child {
+      margin-bottom: 0;
+    }
+
+    &__input {
+      padding-left: 24px;
+      padding-right: 8px;
+      margin-left: 14px;
+    }
+  }
+}
