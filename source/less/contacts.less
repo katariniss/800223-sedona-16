@@ -82,18 +82,34 @@
     &__list {
       display: flex;
       justify-content: space-between;
+      flex-wrap: wrap;
     }
 
     &__input {
-      min-width: 274px;
+      width: 274px;
       margin-left: 16px;
       margin-right: 0;
+      padding-right: 20px;
+      margin-top: 17px;
     }
 
     &__label {
       display: flex;
       flex-direction: row;
       align-items: baseline;
+    }
+
+    &__label span {
+      margin-left: 0;
+    }
+
+    &__label .contacts__icon {
+      margin-left: 345px;
+      margin-top: 17px;
+    }
+
+    &__label .contacts__email {
+      margin-left: 423px;
     }
 
     &__hide {

@@ -59,6 +59,11 @@
       text-align: center;
     }
 
+    &__name .form__title {
+      margin-top: 58px;
+      margin-left: -150px;
+    }
+
     &__contacts {
       order: 3;
       width: 648px;
@@ -93,10 +98,6 @@
       line-height: 58px;
     }
   }
-
-  .form__name .form__title {
-    margin-top: 58px;
-  }
 }
 
 @media (min-width: @desktop-width) {
@@ -106,7 +107,7 @@
     margin-right: 120px;
 
     &__title {
-      margin-top: 70px;
+      margin-top: 52px;
       margin-bottom: 60px;
       font-size: 21px;
     }
@@ -117,6 +118,10 @@
 
     &__name {
       width: 400px;
+    }
+
+    &__name .form__title {
+      margin-top: 45px;
     }
 
     &__contacts {
@@ -140,5 +145,9 @@
     &__submit {
       width: 480px;
     }
+  }
+
+  .form__textarea .form__title {
+    margin-left: -57px;
   }
 }
