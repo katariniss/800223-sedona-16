@@ -8,7 +8,6 @@
   }
 
   &__label {
-    // display: flex;
     flex-direction: row;
     align-items: center;
     text-align: left;
@@ -92,17 +91,33 @@
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
+      margin: 0 auto;
+      justify-content: space-between;
+      width: 460px;
     }
+
+    &__item {
+      padding-left: 0;
+      padding-bottom: 35px;
+    }
+  }
+
+  .checkbox .form__title {
+    margin-left: 185px;
+    margin-right: 200px;
+    margin-top: 10px;
+    margin-bottom: 55px;
   }
 }
 
-@media (min-width: @tablet-width) {
+@media (min-width: @desktop-width) {
   .checkbox {
     width: 960px;
     margin: 0 auto;
 
     &__list {
       justify-content: space-between;
+      width: 490px;
     }
   }
 }
