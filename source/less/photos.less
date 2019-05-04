@@ -1,13 +1,14 @@
 .photos {
-  margin-top: 33px;
+  margin-top: 0;
 
   &__list {
     padding: 0;
+    margin-top: 0;
   }
 
   &__item {
-    padding-top: 23px;
-    padding-bottom: 23px;
+    padding-top: 36px;
+    padding-bottom: 3px;
   }
 
   &__text {
@@ -19,6 +20,7 @@
   &__title {
     font-size: 14px;
     font-weight: bold;
+    margin-bottom: 0;
   }
 
   &__author {
@@ -27,13 +29,15 @@
 
   &__likes-number {
     display: block;
+    margin-top: 10px;
+    margin-left: 38px;
   }
 }
 
 @media (min-width: @tablet-width) {
   .photos {
 
-    margin-top: 75px;
+    margin-top: 67px;
 
     &__list {
       display: flex;
@@ -52,8 +56,13 @@
       flex-grow: 1;
     }
 
+    &__item--first .photos__image {
+      height: 400px;
+    }
+
     &__image {
       width: 324px;
+      height: 267px;
     }
 
     &__image--first {
@@ -71,12 +80,20 @@
       display: flex;
       justify-content: space-between;
     }
+
+    &__title {
+      padding-top: 17px;
+    }
+
+    &__likes-number {
+      margin-top: -10px;
+    }
   }
 }
 
 @media (min-width: @desktop-width) {
   .photos {
-    margin-top: 77px;
+    margin-top: 71px;
 
     &__list {
       margin-left: 0;

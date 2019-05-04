@@ -1,9 +1,41 @@
-.social__list {
-  padding: 0;
+.social {
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 150px;
+    padding: 0;
+    margin: 0 auto;
+    margin-top: 37px;
+    margin-bottom: 36px;
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 46px;
+    height: 48px;
+    background-color: #81b3d2;
+  }
+
+  &__link:hover,
+  &__link:focus {
+    background-color: #669ec0;
+  }
+
+  &__link:active {
+    background-color: #5496bd;
+  }
+
+  &__link:active path {
+    fill: #88b6d1;
+  }
 }
 
 @media (min-width: @tablet-width) {
   .social__list {
     display: flex;
+    margin-left: 0;
   }
 }

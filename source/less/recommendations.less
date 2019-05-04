@@ -1,23 +1,158 @@
 .recommendations {
   margin: 0;
-  padding-bottom: 40px;
+  padding-bottom: 15px;
   padding-left: 70px;
   text-align: left;
 
-  &__title {
-    font-size: @font-size;
-    margin-top: 39px;
-    margin-bottom: 23px;
-  }
-
   &__item {
     padding-right: 40px;
+    position: relative;
+    line-height: 11px;
   }
+
+  &__title {
+    font-size: @font-size;
+    margin-top: 34px;
+    margin-bottom: 18px;
+  }
+
+  &__image--house {
+    height: 37px;
+    width: 36px;
+    position: absolute;
+    top: -10px;
+    left: -47px;
+  }
+
+  &__image--house path,
+  &__image--house rect {
+    fill: @blue;
+  }
+
+  &__image--souvenirs {
+    height: 38px;
+    width: 32px;
+    position: absolute;
+    top: -18px;
+    left: -47px;
+  }
+
+  &__image--souvenirs path {
+    fill: @blue;
+  }
+
+  &__image--food {
+    height: 35px;
+    width: 40px;
+    position: absolute;
+    top: -13px;
+    left: -53px;
+  }
+
+  &__image--food path,
+  &__image--food circle,
+  &__image--food polygon {
+    fill: @blue;
+  }
+
+  // &__item::before {
+  //   position: absolute;
+  //   margin-left: 17px;
+  //   left: 0;
+  //   // top: 10px;
+  //   content: " ";
+  // }
+
+  // &__item--house::before {
+  //   background-image: url("/img/icon-house.svg");
+  //   background-repeat: no-repeat;
+  //   height: 37px;
+  //   width: 36px;
+  // }
+
+  // &__item--food::before {
+  //   background-image: url("/img/icon-burger.svg");
+  //   background-repeat: no-repeat;
+  //   height: 35px;
+  //   width: 40px;
+  // }
+
+  // &__item--souvenirs::before {
+  //   background-image: url("/img/icon-gift.svg");
+  //   background-repeat: no-repeat;
+  //   height: 38px;
+  //   width: 32px;
+  // }
+}
+
+.recommendations p {
+  line-height: 21px;
 }
 
 @media (min-width: @tablet-width) {
   .recommendations {
     display: flex;
     text-align: center;
+    margin-top: 0;
+    padding-top: 132px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+
+    &__item--house {
+      order: 1;
+    }
+
+    &__item--food {
+      order: 2;
+    }
+
+    &__item--souvenirs {
+      order: 3;
+    }
+
+    &__image--house {
+      left: 31%;
+      top: -71px;
+      width: 75px;
+      height: 72px;
+    }
+
+    &__image--food {
+      top: -69px;
+      left: 29%;
+      height: 68px;
+      width: 77px;
+    }
+
+    &__image--souvenirs {
+      top: -75px;
+      left: 32%;
+      height: 75px;
+      width: 64px;
+    }
+
+    &__title {
+      margin-bottom: 25px;
+      font-size: 21px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .recommendations {
+    &__image--house {
+      left: 150px;
+      top: -69px;
+    }
+
+    &__image--souvenirs {
+      top: -72px;
+      left: 134px;
+    }
+
+    &__image--food {
+      top: -66px;
+      left: 144px;
+    }
   }
 }

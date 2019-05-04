@@ -1,7 +1,11 @@
 .features {
   &--blue {
     color: white;
+  }
+
+  &--blue .features__text {
     background-color: @blue;
+    margin-top: -28px;
   }
 
   &__wrapper {
@@ -10,10 +14,33 @@
   }
 
   &__text {
-    padding-bottom: 30px;
-    padding-top: 30px;
+    padding-bottom: 22px;
+    padding-top: 50px;
     padding-left: 27px;
     padding-right: 28px;
+  }
+
+  &__text p {
+    margin-top: -4px;
+  }
+
+  &--reverse .features__text {
+    padding-top: 27px;
+    margin-top: 0;
+  }
+
+  &--grey .features__text {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  &--grey .features__title {
+    margin-top: 0;
+  }
+
+  &--grey {
+    padding-top: 22px;
+    padding-bottom: 14px;
   }
 
   &__title {
@@ -28,14 +55,93 @@
 @media (min-width: @tablet-width) {
   .features--blue {
     display: flex;
+    margin-top: 73px;
+    height: 228px;
+  }
+
+  .features--grey {
+    width: 30%;
+    flex-grow: 1;
+    height: 188px;
+    padding-top: 43px;
+    padding-bottom: 25px;
   }
 
   .features--reverse {
     flex-direction: row-reverse;
+    margin-top: 37px;
+    height: 256px;
   }
 
   .features__wrapper {
     display: flex;
     flex-direction: row;
+  }
+
+  .features__text {
+    width: 270px;
+    padding-top: 27px;
+    padding-left: 49px;
+  }
+
+  .features--grey .features__text {
+    width: 155px;
+  }
+
+  .features__title {
+    font-size: 21px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .features {
+    &--blue {
+      margin-top: 76px;
+    }
+
+    &__text {
+      width: 400px;
+      padding-left: 65px;
+      padding-right: 67px;
+    }
+
+    &__text p {
+      line-height: 21px;
+    }
+
+    &__title {
+      margin-top: 25px;
+      margin-left: 34px;
+      margin-bottom: 13px;
+      width: 200px;
+    }
+
+    &--reverse {
+      margin-top: 61px;
+    }
+
+    &--grey {
+      width: 400px;
+      padding-top: 47px;
+      padding-bottom: 19px;
+    }
+
+    &--grey p {
+      margin-bottom: 21px;
+    }
+
+    &--grey .features__text {
+      width: 287px;
+      padding-left: 68px;
+      padding-right: 68px;
+      line-height: 21px;
+    }
+
+    &--grey .features__title {
+      width: 160px;
+      margin-left: 50px;
+      margin-bottom: 16px;
+      margin-top: 3px;
+    }
   }
 }

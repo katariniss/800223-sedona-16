@@ -1,26 +1,48 @@
 .video {
-  padding-top: 39px;
+  padding-top: 30px;
 
   &__title {
-    padding-bottom: 21px;
+    padding-bottom: 13px;
     margin: 0;
+    font-size: 18px;
   }
 
   &__clip {
-    padding-top: 40px;
+    padding-top: 22px;
+    padding-bottom: 104px;
   }
 }
 
 @media (min-width: @tablet-width) {
-  .video__clip {
-    width: 648px;
+  .video {
+    padding-top: 45px;
+
+    &__title {
+      font-size: 30px;
+    }
+
+    &__clip {
+      width: 648px;
+      padding-top: 57px;
+      padding-bottom: 128px;
+    }
+  }
+
+  .video p {
+    margin-right: 170px;
+    margin-left: 170px;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .video__clip {
-    width: 800px;
-    height: 500px;
-    margin-bottom: 85px;
+  .video {
+    padding-top: 50px;
+
+    &__clip {
+      width: 800px;
+      height: 500px;
+      margin-bottom: 76px;
+      padding-bottom: 0;
+    }
   }
 }

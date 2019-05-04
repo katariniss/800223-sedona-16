@@ -6,6 +6,7 @@
   &__title {
     font-size: @font-size;
     margin-top: 24px;
+    line-height: 26px;
   }
 
   &__submit {
@@ -20,13 +21,17 @@
   }
 
   &__wrapper {
-    margin-bottom: 47px;
+    margin-bottom: 39px;
     margin-top: 50px;
   }
 
   &__required {
     display: none;
   }
+}
+
+.form__checkbox .form__title {
+  margin-top: 14px;
 }
 
 @media (min-width: @tablet-width) {
@@ -39,6 +44,7 @@
 
     &__title {
       margin-top: 55px;
+      font-size: 21px;
     }
 
     &__radio {
@@ -51,6 +57,11 @@
       order: 2;
       width: 290px;
       text-align: center;
+    }
+
+    &__name .form__title {
+      margin-top: 58px;
+      margin-left: -150px;
     }
 
     &__contacts {
@@ -75,6 +86,11 @@
       width: 648px;
       order: 6;
       margin-bottom: 61px;
+      margin-top: 57px;
+    }
+
+    &__submit {
+      width: 324px;
     }
 
     &__required {
@@ -91,7 +107,7 @@
     margin-right: 120px;
 
     &__title {
-      margin-top: 70px;
+      margin-top: 52px;
       margin-bottom: 60px;
       font-size: 21px;
     }
@@ -102,6 +118,10 @@
 
     &__name {
       width: 400px;
+    }
+
+    &__name .form__title {
+      margin-top: 45px;
     }
 
     &__contacts {
@@ -125,5 +145,9 @@
     &__submit {
       width: 480px;
     }
+  }
+
+  .form__textarea .form__title {
+    margin-left: -57px;
   }
 }

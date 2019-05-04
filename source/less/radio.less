@@ -4,14 +4,20 @@
   &__list {
     padding: 0;
     margin-bottom: 25px;
+    margin-top: 40px;
   }
 
   &__item {
     padding-left: 20px;
+    padding-bottom: 18px;
+  }
+
+  &__opinion {
+    margin-left: 40px;
   }
 
   &__label {
-    display: flex;
+    // display: flex;
     flex-direction: row;
     margin-top: 30px;
     text-transform: initial;
@@ -19,9 +25,79 @@
     font-size: @font-size;
     align-items: center;
     color: black;
+    display: block;
+    position: relative;
+    cursor: pointer;
   }
 
   &__input {
     margin-right: 20px;
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+
+  &__checkmark {
+    position: absolute;
+    top: -15px;
+    left: -2px;
+    width: 50px;
+    height: 50px;
+    background-color: #f2f2f2;
+    border-radius: 50%;
+  }
+
+  &__checkmark::after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+
+  &__label:hover input ~ .radio__checkmark {
+    background-color: #e5e5e5;
+  }
+
+  &__label:active input ~ .radio__checkmark {
+    background-color: #d5d5d5;
+  }
+
+  &__label input:checked ~ .radio__checkmark::after {
+    display: block;
+  }
+
+  &__label .radio__checkmark::after,
+  &__label:active input ~ .radio__checkmark::after {
+    top: 16px;
+    left: 16px;
+    width: 19px;
+    height: 19px;
+    border-radius: 50%;
+    background: black;
+  }
+}
+
+.radio .form__title {
+  margin-top: 15px;
+}
+
+@media (min-width: @tablet-width) {
+  .radio {
+    &__item {
+      padding-left: 0;
+      padding-bottom: 25px;
+    }
+
+    &__list {
+      margin-top: 75px;
+      margin-bottom: 7px;
+    }
+
+    &__opinion {
+      margin-left: -64px;
+    }
+  }
+
+  .radio .form__title {
+    margin-top: 45px;
   }
 }

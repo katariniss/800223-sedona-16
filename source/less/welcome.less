@@ -4,11 +4,92 @@
   width: 100%;
   height: 389px;
   background-size: cover;
-  margin-top: -26px;
+  margin-top: -28px;
+
+  &--photo,
+  &--form {
+    height: 159px;
+  }
+
+  &__text {
+    width: 229px;
+    height: 39px;
+    margin-top: 52px;
+  }
+
+  &__text--index {
+    width: 281px;
+    height: 214px;
+    margin-top: 90px;
+  }
+
+  &__mask {
+    background-image: url("/img/bg-intro-triangle-mobile.svg");
+    background-repeat: no-repeat;
+    height: 26px;
+    margin-top: 39px;
+    min-width: @mobile-width;
+    background-size: 100%;
+  }
+
+  &__mask--index {
+    margin-top: 55px;
+  }
 }
 
 @media (min-width: @tablet-width) {
   .welcome {
     margin-top: 0;
+    height: 518px;
+
+    &--photo,
+    &--form {
+      height: 289px;
+    }
+
+    &__text {
+      width: 460px;
+      height: 80px;
+      margin-top: 94px;
+    }
+
+    &__text--index {
+      width: 460px;
+      height: 350px;
+      margin-top: 77px;
+    }
+
+    &__mask {
+      background-image: url("/img/bg-intro-triangle-tablet.svg");
+      height: 57px;
+      margin-top: 55px;
+      min-width: @tablet-width;
+    }
+
+    &__mask--index {
+      margin-top: 31px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .welcome {
+    height: 300px;
+
+    &__text {
+      margin-top: 100px;
+    }
+
+    &__text--index {
+      width: 460px;
+      height: 350px;
+      margin-top: 77px;
+    }
+
+    &__mask {
+      background-image: url("/img/bg-intro-triangle-desktop.svg");
+      min-width: @desktop-width;
+      margin-top: 60px;
+    }
   }
 }
