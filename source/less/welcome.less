@@ -6,6 +6,11 @@
   background-size: cover;
   margin-top: -28px;
 
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/bg-back-mobile@2x.jpg");
+  }
+
   &--photo,
   &--form {
     height: 159px;
@@ -42,6 +47,10 @@
     margin-top: 0;
     height: 518px;
 
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/bg-back-tablet@2x.jpg");
+    }
+
     &--photo,
     &--form {
       height: 289px;
@@ -74,6 +83,10 @@
 
 @media (min-width: @desktop-width) {
   .welcome {
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/bg-back-desktop@2x.jpg");
+    }
+
     &--form,
     &--photo {
       height: 300px;
