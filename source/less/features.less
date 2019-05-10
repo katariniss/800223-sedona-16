@@ -5,7 +5,7 @@
 
   &--blue .features__text {
     background-color: @blue;
-    margin-top: -28px;
+    height: 207px;
   }
 
   &__wrapper {
@@ -14,8 +14,9 @@
   }
 
   &__text {
+    height: 145px;
     padding-bottom: 22px;
-    padding-top: 50px;
+    padding-top: 22px;
     padding-left: 27px;
     padding-right: 28px;
   }
@@ -27,11 +28,12 @@
   &--reverse .features__text {
     padding-top: 27px;
     margin-top: 0;
+    height: 148px;
   }
 
   &--grey .features__text {
-    padding-top: 0;
-    padding-bottom: 0;
+    padding-top: 19px;
+    padding-bottom: 4px;
   }
 
   &--grey .features__title {
@@ -39,8 +41,8 @@
   }
 
   &--grey {
-    padding-top: 22px;
-    padding-bottom: 14px;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 
   &__title {
@@ -55,16 +57,16 @@
 @media (min-width: @tablet-width) {
   .features--blue {
     display: flex;
-    margin-top: 73px;
-    height: 228px;
+    margin-top: 45px;
+    height: 256px;
   }
 
   .features--grey {
     width: 30%;
     flex-grow: 1;
     height: 188px;
-    padding-top: 43px;
-    padding-bottom: 25px;
+    padding-top: 25px;
+    padding-bottom: 43px;
   }
 
   .features--reverse {
@@ -79,9 +81,14 @@
   }
 
   .features__text {
-    width: 270px;
+    width: 188px;
     padding-top: 27px;
-    padding-left: 49px;
+    padding-left: 34px;
+    padding-right: 34px;
+  }
+
+  .features--reverse .features__text {
+    height: 207px;
   }
 
   .features--grey .features__text {
@@ -91,16 +98,22 @@
   .features__title {
     font-size: 21px;
   }
+
+  // .features__photo {
+  //   height: 256px;
+  // }
 }
 
 @media (min-width: @desktop-width) {
   .features {
     &--blue {
-      margin-top: 76px;
+      margin-top: 49px;
+      height: 256px;
+      overflow: hidden;
     }
 
     &__text {
-      width: 400px;
+      width: 268px;
       padding-left: 65px;
       padding-right: 67px;
     }
@@ -122,8 +135,7 @@
 
     &--grey {
       width: 400px;
-      padding-top: 47px;
-      padding-bottom: 19px;
+      padding-bottom: 42px;
     }
 
     &--grey p {
@@ -142,6 +154,10 @@
       margin-left: 50px;
       margin-bottom: 16px;
       margin-top: 3px;
+    }
+
+    &--blue picture {
+      margin-top: -75px;
     }
   }
 }
