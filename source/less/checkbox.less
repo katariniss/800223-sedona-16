@@ -70,6 +70,11 @@
     display: block;
   }
 
+  &__label input:checked:active ~ .checkbox__checkmark::after {
+    color: #333333;
+    opacity: 0.3;
+  }
+
   &__label .checkbox__checkmark::after,
   &__label:active input ~ .checkbox__checkmark::after {
     content: "";

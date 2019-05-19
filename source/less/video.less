@@ -76,6 +76,18 @@
     cursor: pointer;
   }
 
+  &__replay:hover path,
+  &__subtitles:hover path,
+  &__fullscreen:hover polygon {
+    fill: #333333;
+  }
+
+  &__replay:active svg,
+  &__subtitles:active svg,
+  &__fullscreen:active svg {
+    opacity: 0.3;
+  }
+
   &__controls .video__replay,
   &__controls .video__subtitles,
   &__controls .video__fullscreen {
@@ -124,6 +136,12 @@
     &__controls .video__subtitles,
     &__controls .video__fullscreen {
       display: block;
+    }
+
+    &__controls .video__replay:hover svg,
+    &__controls .video__subtitles:hover svg,
+    &__controls .video__fullscreen:hover svg {
+      opacity: 0.6;
     }
 
     &__controls .video__replay {

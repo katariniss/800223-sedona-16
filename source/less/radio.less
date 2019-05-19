@@ -65,6 +65,11 @@
     display: block;
   }
 
+  &__label input:checked:active ~ .radio__checkmark::after {
+    background: #333333;
+    opacity: 0.3;
+  }
+
   &__label .radio__checkmark::after,
   &__label:active input ~ .radio__checkmark::after {
     top: 16px;
