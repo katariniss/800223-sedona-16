@@ -30,7 +30,16 @@
   &__likes-number {
     display: block;
     margin-top: 10px;
-    margin-left: 38px;
+    margin-left: 15px;
+  }
+
+  &__wrapper {
+    display: flex;
+    align-items: flex-end;
+  }
+
+  &__likes {
+    opacity: 0.3;
   }
 }
 
@@ -120,6 +129,14 @@
     &__image--first {
       min-width: @desktop-width;
       height: 400px;
+    }
+
+    &__likes {
+      opacity: 1;
+    }
+
+    &__likes path {
+      fill: white;
     }
 
     &__text {
