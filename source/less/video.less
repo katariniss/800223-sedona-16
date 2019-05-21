@@ -13,11 +13,11 @@
 
   &__controls {
     display: block;
+    position: relative;
     width: 280px;
     height: 45px;
     margin: 0 auto;
-    background-color: black;
-    opacity: 0.6;
+    background-color: rgba(0, 0, 0, 0.5);
     margin-top: -49px;
     margin-bottom: 0;
   }
@@ -138,12 +138,6 @@
       display: block;
     }
 
-    &__controls .video__replay:hover svg,
-    &__controls .video__subtitles:hover svg,
-    &__controls .video__fullscreen:hover svg {
-      opacity: 0.6;
-    }
-
     &__controls .video__replay {
       margin-left: 35px;
       margin-right: 10px;
@@ -151,6 +145,24 @@
 
     &__controls .video__fullscreen {
       margin-right: 40px;
+    }
+
+    &__controls .video__replay path,
+    &__controls .video__fullscreen polygon,
+    &__controls .video__subtitles path {
+      fill: white;
+    }
+
+    &__controls .video__replay:hover,
+    &__controls .video__fullscreen:hover,
+    &__controls .video__subtitles:hover {
+      opacity: 0.6;
+    }
+
+    &__controls .video__replay:active,
+    &__controls .video__fullscreen:active,
+    &__controls .video__subtitles:active {
+      opacity: 0.3;
     }
   }
 

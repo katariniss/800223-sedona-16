@@ -14,4 +14,6 @@
     mainNavigation.classList.remove('main-nav--opened');
     mainNavigation.classList.add('main-nav--closed');
   });
+
+
 })();
