@@ -24,7 +24,16 @@
     margin-left: 14px;
     background-color: @grey;
     font-weight: bold;
-    border: none;
+    border: 3px solid transparent
+  }
+
+  &__input:hover {
+    background-color: #e5e5e5;
+  }
+
+  &__input:active {
+    background-color: white;
+    border: 3px solid #e5e5e5;
   }
 
   &__input::placeholder {
