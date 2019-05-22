@@ -22,6 +22,12 @@
     margin: 0;
   }
 
+  &__link {
+    display: block;
+    height: 100%;
+    color: @white;
+  }
+
   &__item {
     font-weight: bold;
     padding-top: 16px;
@@ -30,9 +36,17 @@
     border-bottom: 1px solid gray;
   }
 
-  &__link {
-    // display: block;
-    color: @white;
+  &__item:hover {
+    background-color: #669ec0;
+  }
+
+  &__item:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: #5496bd;
+  }
+
+  &__item a:active {
+    color: rgba(255, 255, 255, 0.3);
   }
 }
 

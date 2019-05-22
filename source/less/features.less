@@ -1,28 +1,33 @@
 .features {
   &--blue {
     color: white;
+    margin-top: -39px;
   }
 
   &--blue .features__text {
     background-color: @blue;
-    height: 207px;
   }
 
   &__wrapper {
     color: black;
     background-color: @grey;
+    margin-top: -3px;
   }
 
   &__text {
     height: 145px;
     padding-bottom: 22px;
-    padding-top: 22px;
+    padding-top: 61px;
     padding-left: 27px;
     padding-right: 28px;
   }
 
   &__text p {
     margin-top: -4px;
+  }
+
+  &--reverse {
+    margin-top: 0;
   }
 
   &--reverse .features__text {
@@ -32,17 +37,26 @@
   }
 
   &--grey .features__text {
-    padding-top: 19px;
-    padding-bottom: 4px;
+    padding-top: 22px;
+    padding-bottom: 0;
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+
+  &--grey {
+    border-bottom: 1px solid lightgrey;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  &--grey:last-child {
+    border-bottom: 1px solid transparent;
   }
 
   &--grey .features__title {
     margin-top: 0;
-  }
-
-  &--grey {
-    padding-top: 0;
-    padding-bottom: 0;
   }
 
   &__title {
@@ -67,6 +81,8 @@
     height: 188px;
     padding-top: 25px;
     padding-bottom: 43px;
+    margin-left: 0;
+    margin-right: 0;
   }
 
   .features--reverse {
@@ -85,23 +101,27 @@
     padding-top: 27px;
     padding-left: 34px;
     padding-right: 34px;
+    height: 207px;
   }
 
   .features--reverse .features__text {
     height: 207px;
   }
 
+  .features--grey .features__title {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
   .features--grey .features__text {
-    width: 155px;
+    width: 176px;
+    padding-left: 40px;
+    padding-right: 40px;
   }
 
   .features__title {
     font-size: 21px;
   }
-
-  // .features__photo {
-  //   height: 256px;
-  // }
 }
 
 @media (min-width: @desktop-width) {
@@ -133,6 +153,16 @@
       margin-top: 61px;
     }
 
+    &--reverse .features__text {
+      width: 225px;
+      padding-left: 89px;
+      padding-right: 86px;
+    }
+
+    &--reverse .features__title {
+      margin-left: 10px;
+    }
+
     &--grey {
       width: 400px;
       padding-bottom: 42px;
@@ -144,16 +174,18 @@
 
     &--grey .features__text {
       width: 287px;
-      padding-left: 68px;
+      padding-left: 57px;
       padding-right: 68px;
       line-height: 21px;
     }
 
     &--grey .features__title {
       width: 160px;
-      margin-left: 50px;
+      margin-left: 63px;
       margin-bottom: 16px;
       margin-top: 3px;
+      padding-left: 0;
+      padding-right: 0;
     }
 
     &--blue picture {

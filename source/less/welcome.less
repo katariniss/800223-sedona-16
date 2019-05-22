@@ -1,6 +1,7 @@
 .welcome {
   background: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
+  background-position: -225px 0;
   width: 100%;
   height: 389px;
   background-size: cover;
@@ -14,6 +15,7 @@
   &--photo,
   &--form {
     height: 159px;
+    background-position: 0 0;
   }
 
   &__text {
@@ -46,6 +48,7 @@
   .welcome {
     margin-top: 0;
     height: 518px;
+    background-position: 0 0;
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
       background-image: url("../img/bg-back-tablet@2x.jpg");
@@ -54,6 +57,7 @@
     &--photo,
     &--form {
       height: 289px;
+      background-position-y: -228px;
     }
 
     &__text {
@@ -90,6 +94,7 @@
     &--form,
     &--photo {
       height: 300px;
+      background-position-y: -218px;
     }
 
     &__text {

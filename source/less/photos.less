@@ -7,14 +7,21 @@
   }
 
   &__item {
-    padding-top: 36px;
-    padding-bottom: 3px;
+    padding-top: 22px;
+    padding-bottom: 15px;
+    border-top: 1px solid lightgrey;
+  }
+
+  &__item:last-child {
+    border-bottom: 1px solid lightgrey;
   }
 
   &__text {
     padding-left: 20px;
     text-align: left;
     line-height: 1.71;
+    box-sizing: border-box;
+    margin-right: 0;
   }
 
   &__title {
@@ -28,15 +35,27 @@
   }
 
   &__likes-number {
-    display: block;
+    // display: block;
     margin-top: 10px;
-    margin-left: 38px;
+    margin-left: 13px;
+  }
+
+  &__wrapper {
+    display: flex;
+    align-items: flex-end;
+  }
+
+  &__likes {
+    margin-top: 5px;
+  }
+
+  &__likes svg {
+    opacity: 0.3;
   }
 }
 
 @media (min-width: @tablet-width) {
   .photos {
-
     margin-top: 67px;
 
     &__list {
@@ -79,14 +98,20 @@
     &__info {
       display: flex;
       justify-content: space-between;
+      margin-right: 9px;
+    }
+
+    &__info--first {
+      margin-right: 0;
     }
 
     &__title {
       padding-top: 17px;
     }
 
-    &__likes-number {
-      margin-top: -10px;
+    &__likes {
+      margin-left: auto;
+      margin-top: -15px;
     }
   }
 }
@@ -112,6 +137,14 @@
       flex-grow: 1;
     }
 
+    &__info {
+      width: 350px;
+    }
+
+    &__item--first .photos__info {
+      width: auto;
+    }
+
     &__image {
       width: 400px;
       height: 267px;
@@ -122,7 +155,16 @@
       height: 400px;
     }
 
+    &__likes svg {
+      opacity: 1;
+    }
+
+    &__likes path {
+      fill: white;
+    }
+
     &__text {
+      position: relative;
       margin-top: -100px;
       color: @white;
       background: rgba(0, 0, 0, 0.3);
