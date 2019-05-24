@@ -1,55 +1,54 @@
 .contacts {
   padding: 0;
+}
 
-  &__list {
-    padding: 0;
-    margin-top: 24px;
-    margin-bottom: 6px;
-  }
+.contacts__list {
+  padding: 0;
+  margin-top: 24px;
+  margin-bottom: 6px;
+}
 
-  &__item--icon {
-    position: relative;
-  }
+.contacts__item--icon {
+  position: relative;
+}
 
-  &__label {
-    display: flex;
-    flex-direction: column;
-  }
+.contacts__label {
+  display: flex;
+  flex-direction: column;
+}
 
-  &__label span {
-    text-align: left;
-    margin-left: 39px;
-  }
+.contacts__label span {
+  text-align: left;
+  margin-left: 39px;
+}
 
-  &__label .contacts__icon {
-    padding: 18px;
-    display: block;
-    width: 18px;
-    height: 22px;
-    margin-left: 242px;
-    margin-top: 30px;
-    position: absolute;
-    background: #e5e5e5;
-  }
+.contacts__label .contacts__icon {
+  padding: 18px;
+  display: block;
+  width: 18px;
+  height: 22px;
+  margin-left: 242px;
+  margin-top: 30px;
+  position: absolute;
+  background: #e5e5e5;
+}
 
-  &__input {
-    // position: relative;
-    flex-grow: 1;
-    outline: none;
-    padding: 20px;
-    padding-top: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 11px;
-    margin-bottom: 20px;
-    background-color: @grey;
-    font-weight: bold;
-    border: 3px solid transparent;
-  }
+.contacts__input {
+  flex-grow: 1;
+  outline: none;
+  padding: 20px;
+  padding-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 11px;
+  margin-bottom: 20px;
+  background-color: @grey;
+  font-weight: bold;
+  border: 3px solid transparent;
+}
 
-  &__input::placeholder {
-    .placeholder(black, @font-size);
-  }
+.contacts__input::placeholder {
+  .placeholder(black, @font-size);
 }
 
 .contacts__label .contacts__hide {
@@ -57,36 +56,34 @@
 }
 
 @media (min-width: @tablet-width) {
-  .contacts {
-    &__label {
-      text-align: left;
-    }
+  .contacts__label {
+    text-align: left;
+  }
 
-    &__label span {
-      margin-left: 20px;
-    }
+  .contacts__label span {
+    margin-left: 20px;
+  }
 
-    &__label .contacts__icon {
-      margin-left: 591px;
-    }
+  .contacts__label .contacts__icon {
+    margin-left: 591px;
+  }
 
-    &__list {
-      margin-top: 28px;
-    }
+  .contacts__list {
+    margin-top: 28px;
+  }
 
-    &__input {
-      margin-left: 0;
-      margin-right: 0;
-      margin-bottom: 25px;
-      padding-top: 21px;
-      padding-right: 480px;
-    }
+  .contacts__input {
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 25px;
+    padding-top: 21px;
+    padding-right: 480px;
 
-    &__input:hover {
+    &:hover {
       background-color: #e5e5e5;
     }
 
-    &__input:active {
+    &:active {
       background-color: white;
       border: 3px solid #e5e5e5;
     }
@@ -94,45 +91,43 @@
 }
 
 @media (min-width: @desktop-width) {
-  .contacts {
-    &__list {
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
-    }
+  .contacts__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
 
-    &__input {
-      width: 274px;
-      margin-left: 16px;
-      margin-right: 0;
-      padding-right: 15px;
-      padding-left: 15px;
-      margin-top: 17px;
-    }
+  .contacts__input {
+    width: 274px;
+    margin-left: 16px;
+    margin-right: 0;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-top: 17px;
+  }
 
-    &__label {
-      display: flex;
-      flex-direction: row;
-      align-items: baseline;
-    }
+  .contacts__label {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+  }
 
-    &__label span {
-      margin-left: 0;
-    }
+  .contacts__label span {
+    margin-left: 0;
+  }
 
-    &__label .contacts__icon {
-      margin-left: 342px;
-      height: 22px;
-      width: 20px;
-      margin-top: 18px;
-    }
+  .contacts__label .contacts__icon {
+    margin-left: 342px;
+    height: 22px;
+    width: 20px;
+    margin-top: 18px;
+  }
 
-    &__label .contacts__icon--email {
-      margin-left: 418px;
-    }
+  .contacts__label .contacts__icon--email {
+    margin-left: 418px;
+  }
 
-    &__hide {
-      display: none;
-    }
+  .contacts__hide {
+    display: none;
   }
 }

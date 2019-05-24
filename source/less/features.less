@@ -7,65 +7,65 @@
   &--blue .features__text {
     background-color: @blue;
   }
+}
 
-  &__wrapper {
-    color: black;
-    background-color: @grey;
-    margin-top: -3px;
-  }
+.features__wrapper {
+  color: black;
+  background-color: @grey;
+  margin-top: -3px;
+}
 
-  &__text {
-    height: 145px;
-    padding-bottom: 22px;
-    padding-top: 61px;
-    padding-left: 27px;
-    padding-right: 28px;
-  }
+.features__text {
+  height: 145px;
+  padding-bottom: 22px;
+  padding-top: 61px;
+  padding-left: 27px;
+  padding-right: 28px;
+}
 
-  &__text p {
-    margin-top: -4px;
-  }
+.features__text p {
+  margin-top: -4px;
+}
 
-  &--reverse {
-    margin-top: 0;
-  }
+.features--reverse {
+  margin-top: 0;
+}
 
-  &--reverse .features__text {
-    padding-top: 27px;
-    margin-top: 0;
-    height: 148px;
-  }
+.features--reverse .features__text {
+  padding-top: 27px;
+  margin-top: 0;
+  height: 148px;
+}
 
-  &--grey .features__text {
-    padding-top: 22px;
-    padding-bottom: 0;
-    padding-right: 16px;
-    padding-left: 16px;
-  }
+.features--grey .features__text {
+  padding-top: 22px;
+  padding-bottom: 0;
+  padding-right: 16px;
+  padding-left: 16px;
+}
 
-  &--grey {
-    border-bottom: 1px solid lightgrey;
-    margin-left: 20px;
-    margin-right: 20px;
-    padding-top: 0;
-    padding-bottom: 0;
-  }
+.features--grey {
+  border-bottom: 1px solid lightgrey;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-top: 0;
+  padding-bottom: 0;
 
-  &--grey:last-child {
+  &:last-child {
     border-bottom: 1px solid transparent;
   }
+}
 
-  &--grey .features__title {
-    margin-top: 0;
-  }
+.features--grey .features__title {
+  margin-top: 0;
+}
 
-  &__title {
-    font-size: @font-size;
-  }
+.features__title {
+  font-size: @font-size;
+}
 
-  &__photo {
-    width: 100%;
-  }
+.features__photo {
+  width: 100%;
 }
 
 @media (min-width: @tablet-width) {
@@ -125,71 +125,69 @@
 }
 
 @media (min-width: @desktop-width) {
-  .features {
-    &--blue {
-      margin-top: 49px;
-      height: 256px;
-      overflow: hidden;
-    }
+  .features--blue {
+    margin-top: 49px;
+    height: 256px;
+    overflow: hidden;
+  }
 
-    &__text {
-      width: 268px;
-      padding-left: 65px;
-      padding-right: 67px;
-    }
+  .features__text {
+    width: 268px;
+    padding-left: 65px;
+    padding-right: 67px;
+  }
 
-    &__text p {
-      line-height: 21px;
-    }
+  .features__text p {
+    line-height: 21px;
+  }
 
-    &__title {
-      margin-top: 25px;
-      margin-left: 34px;
-      margin-bottom: 13px;
-      width: 200px;
-    }
+  .features__title {
+    margin-top: 25px;
+    margin-left: 34px;
+    margin-bottom: 13px;
+    width: 200px;
+  }
 
-    &--reverse {
-      margin-top: 61px;
-    }
+  .features--reverse {
+    margin-top: 61px;
+  }
 
-    &--reverse .features__text {
-      width: 225px;
-      padding-left: 89px;
-      padding-right: 86px;
-    }
+  .features--reverse .features__text {
+    width: 225px;
+    padding-left: 89px;
+    padding-right: 86px;
+  }
 
-    &--reverse .features__title {
-      margin-left: 10px;
-    }
+  .features--reverse .features__title {
+    margin-left: 10px;
+  }
 
-    &--grey {
-      width: 400px;
-      padding-bottom: 42px;
-    }
+  .features--grey {
+    width: 400px;
+    padding-bottom: 42px;
+  }
 
-    &--grey p {
-      margin-bottom: 21px;
-    }
+  .features--grey p {
+    margin-bottom: 21px;
+  }
 
-    &--grey .features__text {
-      width: 287px;
-      padding-left: 57px;
-      padding-right: 68px;
-      line-height: 21px;
-    }
+  .features--grey .features__text {
+    width: 287px;
+    padding-left: 57px;
+    padding-right: 68px;
+    line-height: 21px;
+  }
 
-    &--grey .features__title {
-      width: 160px;
-      margin-left: 63px;
-      margin-bottom: 16px;
-      margin-top: 3px;
-      padding-left: 0;
-      padding-right: 0;
-    }
+  .features--grey .features__title {
+    width: 160px;
+    margin-left: 63px;
+    margin-bottom: 16px;
+    margin-top: 3px;
+    padding-left: 0;
+    padding-right: 0;
+  }
 
-    &--blue picture {
-      margin-top: -75px;
-    }
+  .features--blue picture {
+    margin-top: -75px;
   }
 }

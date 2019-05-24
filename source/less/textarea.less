@@ -1,27 +1,25 @@
 .textarea {
   padding: 0;
+}
 
-  &__text {
-    font-size: @font-size;
-    font-weight: bold;
-    font-family: @font-family;
-    margin-top: 0;
-    padding-top: 20px;
-    padding-left: 21px;
-    padding-right: 33px;
-    width: 230px;
-    height: 137px;
-    outline: none;
-    background-color: @grey;
-    border: none;
-  }
+.textarea__text {
+  font-size: @font-size;
+  font-weight: bold;
+  font-family: @font-family;
+  margin-top: 0;
+  padding-top: 20px;
+  padding-left: 21px;
+  padding-right: 33px;
+  width: 230px;
+  height: 137px;
+  outline: none;
+  background-color: @grey;
+  border: none;
 }
 
 @media (min-width: @tablet-width) {
-  .textarea {
-    &__text {
-      width: 590px;
-    }
+  .textarea__text {
+    width: 590px;
   }
 
   .textarea .form__title {
@@ -31,9 +29,7 @@
 }
 
 @media (min-width: @desktop-width) {
-  .textarea {
-    &__text {
-      width: 903px;
-    }
+  .textarea__text {
+    width: 903px;
   }
 }
